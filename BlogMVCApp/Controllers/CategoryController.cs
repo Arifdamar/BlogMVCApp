@@ -17,7 +17,14 @@ namespace BlogMVCApp.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            return View(db.Categories.ToList());
+            var Categories = db.Categories.Select(i => new CategoryModel
+            {
+                Id = i.Id,
+                CategoryName = i.CategoryName,
+                BlogCount = i.Blogs.Count()
+            }).ToList();
+
+            return View(Categories);
         }
 
         // GET: Category/Details/5
