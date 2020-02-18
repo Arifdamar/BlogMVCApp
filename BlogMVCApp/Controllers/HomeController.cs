@@ -13,7 +13,18 @@ namespace BlogMVCApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View(context.Blogs.ToList());
+            var blogs = context.Blogs.Where(i => i.IsConfirmed == true && i.IsHomePage == true).Select(i => new BlogModel
+            {
+                Id = i.Id,
+                Title = i.Title,
+                Photo = i.Photo,
+                CreationDate = i.CreationDate,
+                Explanation = i.Explanation.Length > 100 ? i.Explanation.Substring(0, 100) + "..." : i.Explanation,
+                IsConfirmed = i.IsConfirmed,
+                IsHomePage = i.IsHomePage
+            });
+
+            return View(blogs.ToList());
         }
     }
 }

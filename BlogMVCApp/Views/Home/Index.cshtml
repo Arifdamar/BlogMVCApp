@@ -1,13 +1,37 @@
-﻿@model IEnumerable<BlogMVCApp.Models.Blog>
+﻿@model IEnumerable<BlogMVCApp.Models.BlogModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "HomePage";
 }
 
-<h2>Index</h2>
+<h2>Home Page</h2>
 
-@foreach(var item in Model)
-{
-    <p>@item.Title</p>
-}
+<div class="row">
+    <div class="col-md-8">
+        @foreach (var blog in Model)
+        {
+            <div class="blog-item">
+                <h3 class="page-header">
+                    @blog.Title
+                </h3>
+                <p>
+                    <span class="glyphicon glyphicon-time">
+                        @blog.CreationDate
+                    </span>
+                </p>
+                <hr />
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+                <hr />
+                <p>
+                    @blog.Explanation
+                </p>
+                <button class="btn btn-primary">Read all...</button>
+            </div>
+        }
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
+
 
