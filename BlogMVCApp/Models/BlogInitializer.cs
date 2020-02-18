@@ -34,7 +34,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-10),
                     IsHomePage = true,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about C# elegates",
+                    Content = "There is some long technical essay about C# elegates \nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "1.jpg",
                     CategoryId = 1
                 },
@@ -45,7 +45,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-10),
                     IsHomePage = true,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about C# generic list",
+                    Content = "There is some long technical essay about C# generic list\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "2.jpg",
                     CategoryId = 1
                 },
@@ -56,7 +56,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-9),
                     IsHomePage = false,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about Asp.net MVC Controller",
+                    Content = "There is some long technical essay about Asp.net MVC Controller\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "3.jpg",
                     CategoryId = 2
                 },
@@ -67,7 +67,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-8),
                     IsHomePage = true,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about Asp.net MVC View",
+                    Content = "There is some long technical essay about Asp.net MVC View\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "4.jpg",
                     CategoryId = 2
                 },
@@ -78,7 +78,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-8),
                     IsHomePage = true,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about Asp.net MVC Model",
+                    Content = "There is some long technical essay about Asp.net MVC Model\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "4.jpg",
                     CategoryId = 2
                 },
@@ -89,7 +89,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-6),
                     IsHomePage = true,
                     IsConfirmed = true,
-                    Content = "There is some long technical essay about Asp.net WebForm",
+                    Content = "There is some long technical essay about Asp.net WebForm\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "5.jpg",
                     CategoryId = 3
                 },
@@ -100,7 +100,7 @@ namespace BlogMVCApp.Models
                     CreationDate = DateTime.Now.AddDays(-1),
                     IsHomePage = false,
                     IsConfirmed = false,
-                    Content = "There is some long technical essay about Windows Form",
+                    Content = "There is some long technical essay about Windows Form\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Photo = "6.jpg",
                     CategoryId = 4
                 },
