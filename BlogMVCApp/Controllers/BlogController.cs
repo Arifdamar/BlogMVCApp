@@ -48,10 +48,15 @@ namespace BlogMVCApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Explanation,Content,Photo,CreationDate,IsConfirmed,IsHomePage,CategoryId")] Blog blog)
+        public ActionResult Create([Bind(Include = "Title,Explanation,Content,Photo,CategoryId")] Blog blog)
         {
             if (ModelState.IsValid)
             {
+                blog.CreationDate = DateTime.Now;
+                blog.IsConfirmed = false;
+                blog.IsHomePage = false;
+
+
                 db.Blogs.Add(blog);
                 db.SaveChanges();
                 return RedirectToAction("Index");
