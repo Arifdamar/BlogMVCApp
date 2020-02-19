@@ -59,6 +59,9 @@ namespace BlogMVCApp.Controllers
 
                 db.Blogs.Add(blog);
                 db.SaveChanges();
+
+                TempData["BlogCreate"] = blog;
+
                 return RedirectToAction("Index");
             }
 
