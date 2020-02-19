@@ -59,6 +59,9 @@ namespace BlogMVCApp.Controllers
             {
                 db.Categories.Add(category);
                 db.SaveChanges();
+
+                TempData["CategoryCreate"] = category;
+
                 return RedirectToAction("Index");
             }
 
@@ -91,6 +94,9 @@ namespace BlogMVCApp.Controllers
             {
                 db.Entry(category).State = EntityState.Modified;
                 db.SaveChanges();
+
+                TempData["Category"] = category;
+
                 return RedirectToAction("Index");
             }
             return View(category);
