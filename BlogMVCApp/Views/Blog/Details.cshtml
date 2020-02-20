@@ -3,80 +3,30 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="row">
+    <div class="col-md-8">
 
-<h2>Details</h2>
+        <h1>@Model.Title</h1>
+        <hr />
 
-<div>
-    <h4>Blog</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.CategoryName)
-        </dt>
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            @Model.CreationDate
+        </p>
+        <hr />
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+        <hr />
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.CategoryName)
-        </dd>
+        <blockquote>
+            <p>
+                @Model.Explanation
+            </p>
+        </blockquote>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+        <p>
+            @Model.Content
+        </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Explanation)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Explanation)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreationDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreationDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsConfirmed)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsConfirmed)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsHomePage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsHomePage)
-        </dd>
-
-    </dl>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
