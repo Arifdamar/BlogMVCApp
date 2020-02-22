@@ -14,7 +14,7 @@ namespace BlogMVCApp.Controllers
     {
         private BlogContext db = new BlogContext();
 
-        public ActionResult List(int? id)
+        public ActionResult List(int? id, string q)
         {
             var blogs = db.Blogs
                 .Where(i => i.IsConfirmed == true)
@@ -29,6 +29,11 @@ namespace BlogMVCApp.Controllers
                     IsHomePage = i.IsHomePage,
                     CategoryId = i.CategoryId
                 }).AsQueryable();
+
+            if (string.IsNullOrEmpty("q") == false)
+            {
+                blogs = blogs.Where(i => i.Title.Contains(q) || i.Explanation.Contains(q));
+            }
 
             if(id != null)
             {
