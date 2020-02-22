@@ -14,5 +14,6 @@ namespace BlogMVCApp.Models
         public DateTime CreationDate { get; set; }
         public bool IsConfirmed { get; set; }
         public bool IsHomePage { get; set; }
+        public int CategoryId { get; set; }
     }
 }
